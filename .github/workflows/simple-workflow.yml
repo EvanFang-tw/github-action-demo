@@ -11,8 +11,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      COOL: coooool
 
     steps:
       - uses: actions/checkout@v3
@@ -23,4 +21,4 @@ jobs:
         run: echo Hello, world!
 
       - name: Print foo
-        run: echo "${{ THE_FOO }}"
+        run: echo "$THE_FOO"
