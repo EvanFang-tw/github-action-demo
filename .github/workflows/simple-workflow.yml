@@ -19,6 +19,6 @@ jobs:
         run: echo Hello, world!
 
       - name: Print foo
-        run: echo "$THE_FOO"
+        run: echo "Secret is $MY_SECERT"
         env:
-          THE_FOO: FoooOOOO
+          MY_SECERT: ${{ secrets.FOO }}
