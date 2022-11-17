@@ -16,9 +16,9 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Run a one-line script
-        env:
-          THE_FOO: FoooOOOO
         run: echo Hello, world!
 
       - name: Print foo
         run: echo "$THE_FOO"
+        env:
+          THE_FOO: FoooOOOO
