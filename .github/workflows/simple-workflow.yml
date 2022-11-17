@@ -11,11 +11,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      THE_FOO: Hello
 
     steps:
       - uses: actions/checkout@v3
-        with:
-          THE_FOO: 1
 
       - name: Run a one-line script
         run: echo Hello, world!
